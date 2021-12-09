@@ -168,3 +168,25 @@ button:hover {
   top: -40px;
   text-align: left;
 }
+#source-code {
+  color: #105ed3;
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0px;
+  text-align: center;
+  position: relative;
+  left: 290px;
+  bottom: 370px;
+}
+#signature {
+  color: #ffffff;
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0px;
+  text-align: center;
+  position: relative;
+  left: 300px;
+  bottom: 370px;
+}
