@@ -40,7 +40,7 @@ function city(event) {
     let iconElement = document.querySelector("#icon");
     let name = document.querySelector("#current-location");
     let temp = document.querySelector("#current-temp");
-    let precipication = document.querySelector("#current-prec");
+    let description = document.querySelector("#current-descr");
     let humidity = document.querySelector("#current-humidity");
     let wind = document.querySelector("#current-wind-speed");
 
@@ -51,12 +51,9 @@ function city(event) {
       `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     );
     iconElement.setAttribute("alt", response.data.weather[0].description);
-    console.log(response.data);
     name.innerHTML = response.data.name;
     temp.innerHTML = Math.round(celsiusTemperature) + "˚C";
-    precipication.innerHTML = `Precipication ${Math.round(
-      response.data.clouds.all
-    )}%`;
+    description.innerHTML = response.data.weather[0].description;
     humidity.innerHTML = `Humidity ${Math.round(response.data.main.humidity)}%`;
     wind.innerHTML = `Wind ${Math.round(response.data.wind.speed)}mph`;
 

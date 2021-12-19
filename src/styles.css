@@ -147,10 +147,11 @@ button:hover {
   background: #38a1f7;
   color: #ffffff;
 }
-#current-prec {
+#current-descr {
   position: relative;
   bottom: 290px;
   text-align: left;
+  text-transform: capitalize;
 }
 #current-humidity {
   position: relative;
