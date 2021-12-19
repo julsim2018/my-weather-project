@@ -1,7 +1,10 @@
 .container {
   max-width: 600px;
-  margin: 0 auto;
+  max-height: 600px;
+  margin: 30px auto;
   padding: 60px;
+  border: 2px solid#ffffff;
+  border-radius: 5px;
 }
 body {
   background: linear-gradient(to top, #4999db 0.05%, rgb(250, 253, 255) 100%);
@@ -103,7 +106,7 @@ ul {
   text-align: center;
   position: relative;
   left: 55px;
-  bottom: 450px;
+  bottom: 120px;
 }
 .mb-3 {
   display: block;
@@ -159,27 +162,14 @@ button:hover {
   bottom: 290px;
   text-align: left;
 }
+
 #source-code {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 60px;
   color: #105ed3;
   font-size: 16px;
-  text-align: center;
-  position: relative;
-  left: 100px;
-  bottom: 440px;
 }
 #signature {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 60px;
   color: #ffffff;
   font-size: 16px;
-  text-align: center;
-  position: relative;
-  left: 0px;
-  bottom: 440px;
 }
 #icon {
   display: block;
@@ -187,4 +177,13 @@ button:hover {
   position: relative;
   left: 433px;
   bottom: 255px;
+}
+#sign-code {
+  display: block;
+  margin: 0 auto;
+  padding: 60px;
+  text-align: center;
+  position: relative;
+  right: 160px;
+  bottom: 150px;
 }
