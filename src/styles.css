@@ -57,6 +57,7 @@ video {
   bottom: 140px;
   left: 10px;
   margin-bottom: 40px;
+  margin-top: 10px;
 }
 .temperature {
   color: #348dd6;
@@ -68,11 +69,19 @@ video {
   bottom: 215px;
   right: 55px;
 }
+#celsius-link {
+  font-weight: bold;
+  color: #226cb1;
+}
+#fahrenheit-link {
+  font-weight: bold;
+  color: #226cb1;
+}
 .units {
-  text-align: center;
   display: block;
   position: relative;
-  bottom: 210px;
+  top: -260px;
+  left: 380px;
 }
 .conditions {
   color: #2e628d;
@@ -94,7 +103,7 @@ ul {
   text-align: center;
   position: relative;
   left: 55px;
-  bottom: 390px;
+  bottom: 450px;
 }
 .mb-3 {
   display: block;
@@ -108,7 +117,7 @@ ul {
   border-radius: 5px;
   box-shadow: 2px 3px 8px 1px rgb(5, 5, 5, 0.5);
   position: relative;
-  bottom: 60px;
+  bottom: 310px;
   right: 130px;
 }
 .btn-primary {
@@ -117,8 +126,8 @@ ul {
   border-radius: 5px;
   box-shadow: 2px 3px 8px 1px rgb(5, 5, 5, 0.5);
   position: relative;
-  bottom: 113px;
-  left: 10px;
+  bottom: 363px;
+  left: 230px;
 }
 button {
   background: #2b7ae2;
@@ -128,69 +137,49 @@ button {
   border-radius: 7px;
   box-shadow: 2px 3px 8px 1px rgb(5, 5, 5, 0.5);
   position: relative;
-  bottom: 148px;
-  left: 190px;
+  bottom: 400px;
+  left: 400px;
 }
 button:hover {
   background: #38a1f7;
   color: #ffffff;
 }
-#celisius-link {
-  text-decoration: none;
-  font-weight: bold;
-  color: #226cb1;
-  text-align: center;
-  display: block;
-  position: relative;
-  top: 104px;
-  left: 80px;
-}
-#fahrenheit-link {
-  text-decoration: none;
-  font-weight: bold;
-  color: #226cb1;
-  text-align: center;
-  display: block;
-  position: relative;
-  top: 80px;
-  left: 55px;
-}
 #current-prec {
   position: relative;
-  bottom: 60px;
+  bottom: 290px;
   text-align: left;
 }
 #current-humidity {
   position: relative;
-  bottom: 50px;
+  bottom: 290px;
   text-align: left;
 }
 #current-wind-speed {
   position: relative;
-  top: -40px;
+  bottom: 290px;
   text-align: left;
 }
 #source-code {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 60px;
   color: #105ed3;
   font-size: 16px;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 0px;
   text-align: center;
   position: relative;
-  left: 290px;
-  bottom: 370px;
+  left: 100px;
+  bottom: 440px;
 }
 #signature {
-  color: #ffffff;
-  font-size: 16px;
   max-width: 600px;
   margin: 0 auto;
-  padding: 0px;
+  padding: 60px;
+  color: #ffffff;
+  font-size: 16px;
   text-align: center;
   position: relative;
-  left: 300px;
-  bottom: 370px;
+  left: 0px;
+  bottom: 440px;
 }
 #icon {
   display: block;
