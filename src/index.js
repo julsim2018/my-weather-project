@@ -24,7 +24,8 @@ if (minutes < 10) {
   time.innerHTML = `${hours}:${minutes}`;
 }
 ///
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
@@ -58,6 +59,14 @@ function city(event) {
   let weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityInput}&units=metric`;
   axios.get(`${weatherUrl}&appid=${apiKey}`).then(cityWeather);
 
+  function getForecast(coordinates) {
+    console.log(coordinates);
+    let apiKey = "ef930d0f984af2e7bd795e895a02ad6e";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+    console.log(apiUrl);
+    axios.get(apiUrl).then(displayForecast);
+  }
+
   function cityWeather(response) {
     let iconElement = document.querySelector("#icon");
     let name = document.querySelector("#current-location");
@@ -78,6 +87,8 @@ function city(event) {
     description.innerHTML = response.data.weather[0].description;
     humidity.innerHTML = `Humidity ${Math.round(response.data.main.humidity)}%`;
     wind.innerHTML = `Wind ${Math.round(response.data.wind.speed)}mph`;
+
+    getForecast(response.data.coord);
 
     function showPosition(position) {
       let lat = position.coords.latitude;
@@ -120,5 +131,3 @@ cityForm.addEventListener("submit", city);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", showFahrenheit);
-
-displayForecast();
