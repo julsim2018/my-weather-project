@@ -52,16 +52,20 @@
         <input type="submit" class="btn btn-primary" value="Go" id="input-city"/>
       </form>
     <button id="current">Current</button>
-    
+    <div class="weather-forecast">
          <div class="row">
-        <div class="col-2">Tomorrow<br/><i class="fas fa-cloud"></i><br/>17˚</div>
-        <div class="col-2">Tuesday<br/><i class="fas fa-cloud-sun"></i><br/>17˚</div>
-        <div class="col-2">Wednesday<br/><i class="fas fa-cloud"></i><br/>19˚</div>
-        <div class="col-2">Thursday<br/><i class="fas fa-cloud-rain"></i><br/>18˚</div>
-        <div class="col-2">Friday<br/><i class="fas fa-cloud-rain"></i><br/>19˚</div>
+        <div class="col-2">
+          <div class="weather-forecast-date">Tomorrow</div>
+          <i class="fas fa-cloud"></i>
+          <div class="weather-forecast-temperature">
+            <span class="weather-forecast-temperature-max">18˚</span>
+            <span class="weather-forecast-temperature-min">12˚</span>
+          </div>
+        </div>
     </div>
-     </div>
-     </div>
+    </div>
+  </div>
+</div>
      <div id="sign-code">
     <a href="https://github.com/julsim2018/my-weather-project.git" id="source-code">Open-source code </a><span id="signature"> by Julia Simenyi</span></div>
       <script src="src/index.js"></script>

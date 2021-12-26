@@ -129,11 +129,19 @@ button:hover {
 }
 .row {
   color: #ffffff;
-  font-size: 14px;
   margin: 0 auto;
-  padding: 0px;
   text-align: center;
   margin-top: 30px;
+}
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.6;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.6;
+}
+.weather-forecast-temperature {
+  font-size: 13px;
 }
 #source-code {
   color: #105ed3;
