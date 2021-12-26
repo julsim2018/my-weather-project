@@ -15,9 +15,9 @@ let days = [
 ];
 let day = days[now.getDay()];
 
-let today = document.querySelector("h1");
+let today = document.querySelector("#day");
 today.innerHTML = day;
-let time = document.querySelector("h2");
+let time = document.querySelector("#time");
 if (minutes < 10) {
   time.innerHTML = `${hours}:0${minutes}`;
 } else {

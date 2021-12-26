@@ -1,117 +1,101 @@
 .container {
   max-width: 600px;
-  max-height: 600px;
-  margin: 30px auto;
-  padding: 60px;
+  max-height: 800px;
+  margin: 10px auto;
+  margin-bottom: 100px;
+  padding: 30px;
   border: 2px solid#ffffff;
   border-radius: 5px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 body {
   background: linear-gradient(to top, #4999db 0.05%, rgb(250, 253, 255) 100%);
 }
 h1 {
+  margin-top: -30px;
   color: #4999db;
-  font-size: 46px;
-  margin: 10px auto;
+  font-size: 36px;
   text-align: left;
   text-decoration: none;
   font-weight: lighter;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  margin-bottom: 30px;
 }
-h2 {
-  color: #4999db;
-  font-size: 40px;
-  margin: 10px auto;
+#time {
+  display: block;
+  margin-top: -40px;
+  font-size: 30px;
   text-align: right;
-  text-decoration: none;
-  font-weight: lighter;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-.day {
-  position: relative;
-  left: 10px;
-  bottom: 50px;
-}
-.time {
-  position: relative;
-  right: 15px;
-  bottom: 130px;
 }
 video {
   max-width: 100%;
   display: block;
   margin: 0 auto;
   border-radius: 15px;
-  position: relative;
-  bottom: 135px;
 }
 .location {
-  color: #348dd6;
+  color: #217eca;
   font-weight: bold;
   font-size: 25px;
   margin: 0 auto;
   text-align: left;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  position: relative;
-  bottom: 140px;
-  left: 10px;
-  margin-bottom: 40px;
-  margin-top: 10px;
 }
 .temperature {
-  color: #348dd6;
+  display: block;
+  text-align: right;
+  max-width: 480px;
+  margin-top: -30px;
+  color: #217eca;
   font-weight: bold;
   font-size: 25px;
-  text-align: right;
-  display: block;
-  position: relative;
-  bottom: 215px;
-  right: 55px;
+}
+#icon {
+  max-width: 45px;
+  margin-top: -60px;
+  margin-left: 490px;
 }
 #celsius-link {
   font-weight: bold;
+  font-size: 18px;
   color: #226cb1;
+  display: block;
+  margin-top: -28px;
+  margin-left: 500px;
 }
 #fahrenheit-link {
   font-weight: bold;
+  font-size: 18px;
   color: #226cb1;
-}
-.units {
   display: block;
-  position: relative;
-  top: -260px;
-  left: 380px;
+  margin-top: -27px;
+  margin-left: 525px;
+}
+ul {
+  list-style: none;
+  display: block;
+  margin-left: -30px;
+  margin-top: -22px;
 }
 .conditions {
   color: #2e628d;
   font-size: small;
   font-weight: bold;
   text-decoration: none;
-  padding: 50;
 }
-ul {
-  list-style: none;
-  padding: 10px;
+#current-descr {
+  text-align: left;
+  text-transform: capitalize;
 }
-.row {
-  color: #ffffff;
-  font-size: 16px;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 0px;
-  text-align: center;
-  position: relative;
-  left: 55px;
-  bottom: 120px;
+#current-humidity {
+  text-align: left;
+}
+#current-wind-speed {
+  text-align: left;
 }
 .mb-3 {
   display: block;
-  width: 200px;
+  width: 300px;
   margin: 0px auto;
+  margin-left: 0px;
   padding: 0px;
   font-size: 15px;
   color: #ffffff;
@@ -119,18 +103,14 @@ ul {
   border: none;
   border-radius: 5px;
   box-shadow: 2px 3px 8px 1px rgb(5, 5, 5, 0.5);
-  position: relative;
-  bottom: 310px;
-  right: 130px;
 }
 .btn-primary {
   background: #38a1f7;
   border: none;
   border-radius: 5px;
   box-shadow: 2px 3px 8px 1px rgb(5, 5, 5, 0.5);
-  position: relative;
-  bottom: 363px;
-  left: 230px;
+  margin-left: 320px;
+  margin-top: -97px;
 }
 button {
   background: #2b7ae2;
@@ -139,31 +119,22 @@ button {
   border: none;
   border-radius: 7px;
   box-shadow: 2px 3px 8px 1px rgb(5, 5, 5, 0.5);
-  position: relative;
-  bottom: 400px;
-  left: 400px;
+  display: block;
+  margin-top: -79px;
+  margin-left: 400px;
 }
 button:hover {
   background: #38a1f7;
   color: #ffffff;
 }
-#current-descr {
-  position: relative;
-  bottom: 290px;
-  text-align: left;
-  text-transform: capitalize;
+.row {
+  color: #ffffff;
+  font-size: 14px;
+  margin: 0 auto;
+  padding: 0px;
+  text-align: center;
+  margin-top: 30px;
 }
-#current-humidity {
-  position: relative;
-  bottom: 290px;
-  text-align: left;
-}
-#current-wind-speed {
-  position: relative;
-  bottom: 290px;
-  text-align: left;
-}
-
 #source-code {
   color: #105ed3;
   font-size: 16px;
@@ -172,19 +143,10 @@ button:hover {
   color: #ffffff;
   font-size: 16px;
 }
-#icon {
-  display: block;
-  width: 45px;
-  position: relative;
-  left: 433px;
-  bottom: 255px;
-}
 #sign-code {
   display: block;
   margin: 0 auto;
-  padding: 60px;
   text-align: center;
-  position: relative;
-  right: 160px;
-  bottom: 150px;
+  padding: 0px 0px 100px;
+  margin-top: -80px;
 }
