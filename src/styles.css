@@ -1,5 +1,5 @@
 .container {
-  max-width: 600px;
+  max-width: 500px;
   max-height: 800px;
   margin: 10px auto;
   margin-bottom: 100px;
@@ -38,20 +38,22 @@ video {
   font-size: 25px;
   margin: 0 auto;
   text-align: left;
+  display: block;
+  margin-top: 10px;
 }
 .temperature {
   display: block;
   text-align: right;
-  max-width: 480px;
-  margin-top: -30px;
+  max-width: 380px;
+  margin-top: -40px;
   color: #217eca;
   font-weight: bold;
   font-size: 25px;
 }
 #icon {
   max-width: 45px;
-  margin-top: -60px;
-  margin-left: 490px;
+  margin-top: -70px;
+  margin-left: 390px;
 }
 #celsius-link {
   font-weight: bold;
@@ -59,15 +61,17 @@ video {
   color: #226cb1;
   display: block;
   margin-top: -28px;
-  margin-left: 500px;
+  margin-left: 395px;
+  margin-bottom: 50px;
 }
 #fahrenheit-link {
   font-weight: bold;
   font-size: 18px;
   color: #226cb1;
   display: block;
-  margin-top: -27px;
-  margin-left: 525px;
+  margin-top: -77px;
+  margin-left: 417px;
+  margin-bottom: 50px;
 }
 ul {
   list-style: none;
