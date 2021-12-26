@@ -142,6 +142,7 @@ button:hover {
 }
 .weather-forecast-temperature {
   font-size: 13px;
+  margin-top: 10px;
 }
 #source-code {
   color: #105ed3;

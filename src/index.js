@@ -24,7 +24,29 @@ if (minutes < 10) {
   time.innerHTML = `${hours}:${minutes}`;
 }
 ///
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
 
+  let forecastHTML = `<div class="row">`;
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+        <div class="col-2">
+          <div class="weather-forecast-date">${day}</div>
+          <i class="fas fa-cloud"></i>
+          <div class="weather-forecast-temperature">
+            <span class="weather-forecast-temperature-max">18˚</span>
+            <span class="weather-forecast-temperature-min">12˚</span>
+        </div>
+      </div>
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 ///
 function city(event) {
   event.preventDefault();
@@ -98,3 +120,5 @@ cityForm.addEventListener("submit", city);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", showFahrenheit);
+
+displayForecast();
